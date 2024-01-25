@@ -4,7 +4,13 @@
 # Description: Project 3b
 
 num = int(input("Please enter a positive integer: "))
-print("The factors of", num, "are:")
-for factor in range(1, num):
-    if num % factor == 0:
-        print(factor)
+facts = []
+
+for i in range(1, num//2+1):
+    if num % i == 0:
+        facts.append(i)
+
+facts.append(num)
+
+print("The factors of " + str(num) + " are: ")
+print(*facts, sep = "\n")
