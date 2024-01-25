@@ -6,6 +6,6 @@
 num = int(input("Please enter a positive integer: "))
 print("The factors of", num, "are:")
 
-for factor in range(2, num):
+for factor in range(1, num):
     if num % factor == 0:
         print(factor)
